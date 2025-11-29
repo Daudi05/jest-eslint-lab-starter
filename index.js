@@ -9,6 +9,7 @@
 function capitalizeWords(input) {
     return input.replace(/\b\w/g, char => char.toUpperCase());
 }
+//console.log(capitalizeWords(""))
 
 /**
  * Filters active users from the array.
@@ -29,5 +30,6 @@ function logAction(action, username) {
     const timestamp = new Date().toISOString();
     return `User ${username} performed ${action} at ${timestamp}`;
 }
+console.log(logAction('', ''))
 
 module.exports = { capitalizeWords, filterActiveUsers, logAction };
